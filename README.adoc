@@ -1,0 +1,81 @@
+= IBM PS/2 P7X Floppy Drive Adapter
+Malte Dehling <mdehling@gmail.com>
+
+:imagesdir: https://raw.githubusercontent.com/1k5/p7x-floppy-adapter/main/img/
+
+:url-Ohland-P70: http://ohlandl.ipv7.net/8573/8573-P70.html
+:url-TubeTimeUS-Twitter: https://twitter.com/tubetimeus
+:url-TubeTimeUS-PS2FloppyAdapter: https://github.com/schlae/PS2FloppyAdapter
+:url-Aisler: https://aisler.net/
+:url-KiCad: https://kicad.org/
+
+
+A well-known weakness of the portable IBM PS/2 models P70 and P75 is their
+floppy drive.  Many of the drives have failed due to leaking capacitors and/or
+problems stemming from their vertical orientation.  This adapter is designed
+to allow replacing a failed IBM drive with a standard PC floppy drive.
+
+For a similar project for the less portable IBM PS/2 Model 50(Z) and Model 70,
+check out {url-TubeTimeUS-Twitter}[@TubeTimeUS]'s
+{url-TubeTimeUS-PS2FloppyAdapter}[PS/2 floppy drive adapter].  It was after I
+found his project that I had the idea to make this version for the P7X.
+
+
+Parts
+-----
+I designed the PCB using {url-KiCad}[KiCad 5] and ordered a small batch from
+{url-Aisler}[Aisler], of which there are still some left.  Feel free to send
+me an email!
+
+Apart from the PCB, you will need the following components:
+
+[%autowidth]
+|===
+| Designator | Quantity | Description
+
+| J1         | 1        | 2x17 2.54mm shrouded pin header
+| J2         | 1        | 2x17 2.54mm socket header
+| J3         | 1        | floppy power connector
+| R1–R6      | 6        | 1k 0.25W 5% axial resistor
+|===
+
+
+Assembly
+--------
+Assembling the adapter is pretty straightforward, see the photos below.  Note
+that in trying to keep the PCB small enough to physically fit in the P7X, I
+had to place the components very close together.  If you use a shrouded pin
+header for J1, it is easy to accidentally cover some of the neighboring
+through-holes.  In my experience, the easiest way to avoid this is to solder
+on the P7X-side header J1 last.
+
+Most newer floppy drives do not need the +12V line, e.g., both of the drives I
+tested work with just +5V connected.  It is there, however, in case some other
+drive needs it.
+
+link:{imagesdir}front.jpg[image:front.jpg["Front Side",width=32%]]
+link:{imagesdir}back.jpg[image:back.jpg["Back Side",width=32%]]
+link:{imagesdir}mounted.jpg[image:mounted.jpg["Mounted Adapter",width=32%]]
+
+
+Installing the Drive
+--------------------
+Read link:{url-Ohland-P70}[Louis Ohland's P70 page] for information on how to
+remove (and install) the floppy drive.  It contains a lot of other useful
+information on the P70, too.
+
+I have personally tested the adapter with the following drive models:
+
+* NEC FD1231H
+* TEAC FD-235HF
+
+If you end up using this adapter (or fail to) with other drives, please let me
+know so I can include that information on this page.
+
+With both drive models, I had to remove the plastic front bezel for the drive
+to fit.  The eject button for the NEC FD1231H fits the hole in the P7X's drive
+cover.  It is not centered and a little too small, but it works well enough.
+In the case of the TEAC FD-235HF, you will have to file the eject button down
+a little to make it fit.  @TubeTimeUS's project above also contains an STL
+file for a custom eject button for the TEAC FD-235HF.  I have not yet tried
+whether it fits the P7X.
