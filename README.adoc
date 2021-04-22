@@ -79,3 +79,26 @@ In the case of the TEAC FD-235HF, you will have to file the eject button down
 a little to make it fit.  @TubeTimeUS's project above also contains an STL
 file for a custom eject button for the TEAC FD-235HF.  I have not yet tried
 whether it fits the P7X.
+
+
+Permanently Converting a Drive
+------------------------------
+Another option I explored is permanently converting a disk drive by soldering
+on a converter board.  One advantage of this approach is, that the resulting
+converted drive is smaller than a drive with an adapter plugged in.  This
+makes it a little easier to install.  The downside is, of course, that there
+is no easy way to go back.
+
+This is what a converted TEAC FD-235HF drive looks like:
+
+link:{imagesdir}teac-fd-235hf_1.jpg[image:teac-fd-235hf_1.jpg["At an Angle",width=32%]]
+link:{imagesdir}teac-fd-235hf_2.jpg[image:teac-fd-235hf_2.jpg["Back Side",width=32%]]
+link:{imagesdir}teac-fd-235hf_3.jpg[image:teac-fd-235hf_3.jpg["From Above",width=32%]]
+
+And here is how it compares to the ALPS-produced IBM floppy drive:
+
+link:{imagesdir}ibm_vs_teac-fd-235hf_1.jpg[image:ibm_vs_teac-fd-235hf_1.jpg["From the Side",width=32%]]
+link:{imagesdir}ibm_vs_teac-fd-235hf_2.jpg[image:ibm_vs_teac-fd-235hf_2.jpg["From Behind",width=32%]]
+
+You can find the KiCad PCB in the `+converter/+` directory should you want to
+follow this path.
