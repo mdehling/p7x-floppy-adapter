@@ -3,7 +3,7 @@ Malte Dehling <mdehling@gmail.com>
 
 :imagesdir: https://raw.githubusercontent.com/1k5/p7x-floppy-adapter/main/img/
 
-:url-Ohland-P70: http://ohlandl.ipv7.net/8573/8573-P70.html
+:url-Ohland-P70: https://ardent-tool.com/8573/P70.html
 :url-TubeTimeUS-Twitter: https://twitter.com/tubetimeus
 :url-TubeTimeUS-PS2FloppyAdapter: https://github.com/schlae/PS2FloppyAdapter
 :url-Aisler: https://aisler.net/
