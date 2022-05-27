@@ -1,7 +1,7 @@
 = IBM PS/2 P7X Floppy Drive Adapter
 Malte Dehling <mdehling@gmail.com>
 
-:imagesdir: https://raw.githubusercontent.com/1k5/p7x-floppy-adapter/main/img/
+:imagesdir: https://raw.githubusercontent.com/mdehling/p7x-floppy-adapter/main/img/
 
 :url-Ohland-P70: https://ardent-tool.com/8573/P70.html
 :url-TubeTimeUS-Twitter: https://twitter.com/tubetimeus
